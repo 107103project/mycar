@@ -52,7 +52,7 @@
 # #STEERING
 # STEERING_CHANNEL = 1            #channel on the 9685 pwm board 0-15
 STEERING_LEFT_PWM = 580         #pwm value for full left steering
-STEERING_RIGHT_PWM = 220        #pwm value for full right steering
+STEERING_RIGHT_PWM = 240        #pwm value for full right steering
 # 
 # #STEERING FOR PIGPIO_PWM
 # STEERING_PWM_PIN = 13           #Pin numbering according to Broadcom numbers
@@ -61,9 +61,9 @@ STEERING_RIGHT_PWM = 220        #pwm value for full right steering
 # 
 # #THROTTLE
 THROTTLE_CHANNEL = 0            #channel on the 9685 pwm board 0-15
-THROTTLE_FORWARD_PWM = 370        #pwm value for max forward throttle
-THROTTLE_STOPPED_PWM = 320      #pwm value for no movement
-THROTTLE_REVERSE_PWM = 280      #pwm value for max reverse throttle
+THROTTLE_FORWARD_PWM = 460       #pwm value for max forward throttle
+THROTTLE_STOPPED_PWM = 410      #pwm value for no movement
+THROTTLE_REVERSE_PWM = 300      #pwm value for max reverse throttle
 # 
 # #THROTTLE FOR PIGPIO_PWM
 # THROTTLE_PWM_PIN = 18           #Pin numbering according to Broadcom numbers
@@ -184,13 +184,13 @@ JOYSTICK_MAX_THROTTLE = 1         #this scalar is multiplied with the -1 to 1 th
 # RECORD_DURING_AI = False        #normally we do not record during ai mode. Set this to true to get image and steering records for your Ai. Be careful not to use them to train.
 # 
 # #LED
-HAVE_RGB_LED = True            #do you have an RGB LED like https://www.amazon.com/dp/B07BNRZWNF
-LED_INVERT = True              #COMMON ANODE? Some RGB LED use common anode. like https://www.amazon.com/Xia-Fly-Tri-Color-Emitting-Diffused/dp/B07MYJQP8B
+#HAVE_RGB_LED = False            #do you have an RGB LED like https://www.amazon.com/dp/B07BNRZWNF
+#LED_INVERT = True              #COMMON ANODE? Some RGB LED use common anode. like https://www.amazon.com/Xia-Fly-Tri-Color-Emitting-Diffused/dp/B07MYJQP8B
 # 
 # #LED board pin number for pwm outputs
 # #These are physical pinouts. See: https://www.raspberrypi-spy.co.uk/2012/06/simple-guide-to-the-rpi-gpio-header-and-pins/
 # LED_PIN_R = 12
-LED_PIN_G = 18
+#  LED_PIN_G = 18
 # LED_PIN_B = 16
 # 
 # #LED status color, 0-100
@@ -223,7 +223,7 @@ LED_PIN_G = 18
 # #When training the Behavioral Neural Network model, make a list of the behaviors,
 # #Set the TRAIN_BEHAVIORS = True, and use the BEHAVIOR_LED_COLORS to give each behavior a color
 # TRAIN_BEHAVIORS = False
-TRAIN_BEHAVIORS = True
+#  TRAIN_BEHAVIORS = True
 # BEHAVIOR_LIST = ['Left_Lane', "Right_Lane"]
 # BEHAVIOR_LED_COLORS =[ (0, 10, 0), (10, 0, 0) ] #RGB tuples 0-100 per chanel
 # 
