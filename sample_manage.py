@@ -34,7 +34,7 @@ from donkeycar.parts.file_watcher import FileWatcher
 from donkeycar.parts.launch import AiLaunch
 from donkeycar.utils import *
 from donkeypart_ps3_controller import PS3JoystickController
-from donkeycar.parts.tub_v2 import TubWriter
+
 def drive(cfg, model_path=None, use_joystick=False, model_type=None, camera_type='single', meta=[]):
     '''
     Construct a working robotic vehicle from many parts.
